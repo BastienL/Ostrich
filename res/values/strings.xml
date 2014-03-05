@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ostrich</string>
+    <string name="widget_name">Ostrich widget</string>
+    <string name="welcome">Welcome, stranger!</string>
+	<string name="ostrich_listening">I am... LISTENING!</string>
+	<string name="ostrich_dont_care">I... DON\'T CARE!</string>
+	<string name="error_occured">My apologies, an error occurred</string>
+	<string name="have_a_sim_card">You must have a sim card up and running to use my superpowers</string>
+</resources>

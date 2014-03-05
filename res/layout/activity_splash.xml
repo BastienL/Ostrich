@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		
+       <RelativeLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.5"
+	        android:background="@color/green" />
+       
+       <RelativeLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.5"
+	        android:background="@color/red" />
+    
+	</LinearLayout>
+    
+	<LinearLayout 
+		android:id="@+id/splash"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	    
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.1">
+	        
+	        <TextView
+	    		android:id="@+id/ostrich_speaking"
+	    		android:layout_width="fill_parent" 
+			    android:layout_height="fill_parent" 
+			    android:gravity="center"
+			    android:textColor="@color/white"
+			    android:textSize="32sp"
+			    android:text="@string/welcome"/>
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/ostrich_container"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.7">
+	        
+	        <ImageView
+	            android:id="@+id/ostrich_splash_image"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/splash"/>
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.025" />
+	    
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.15">
+	        
+	        <LinearLayout 
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:orientation="horizontal">
+	  
+	            <ImageView 
+			    	android:id="@+id/button_on"
+			      	android:layout_width="wrap_content" 
+			      	android:layout_height="wrap_content" 
+			      	android:layout_weight="0.5"
+			      	android:layout_marginLeft="25dip" 
+			      	android:layout_marginRight="25dip"
+	      		  	android:src="@drawable/button_on_splash"/>
+	            
+			    <ImageView 
+			      	android:id="@+id/button_off"
+			      	android:layout_width="wrap_content"
+			      	android:layout_height="wrap_content"
+			      	android:layout_weight="0.5" 
+			      	android:src="@drawable/button_off_splash"
+			      	android:layout_marginLeft="25dip" 
+			      	android:layout_marginRight="25dip"/>
+	  
+			</LinearLayout>
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.025" />
+	    
+	</LinearLayout>
+</RelativeLayout>
